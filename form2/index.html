@@ -1,0 +1,60 @@
+<p>Form page 2</p>
+
+<!-- <script type="text/javascript">
+var formdata =
+        {
+            "action" : "index.html",
+            "method" : "get",
+            "elements" : 
+            [
+                {
+                    "name" : "textfield",
+                    "caption" : "Label for textfield",
+                    "type" : "text",
+                    "value" : "Hello world"
+                },
+                {
+                    "type" : "submit",
+                    "value" : "Submit"
+                }
+            ]           
+        };
+        $("#myform").buildForm(formdata);
+        
+        // Or to load the form definition via AJAX
+        $("#myform").buildForm("http://example.com/myform.json");
+        </script> -->
+
+<script type="text/javascript">
+	$(function() {
+	  // Generate a form
+		$("#myform").dform({
+		    "action" : "index.html",
+		    "method" : "get",
+		    "html" :
+		    [
+		        {
+		            "type" : "p",
+		            "html" : "You must login"
+		        },
+		        {
+		            "name" : "username",
+		            "id" : "txt-username",
+		            "caption" : "Username",
+		            "type" : "text",
+		            "placeholder" : "E.g. user@example.com"
+		        },
+		        {
+		            "name" : "password",
+		            "caption" : "Password",
+		            "type" : "password"
+		        },
+		        {
+		            "type" : "submit",
+		            "value" : "Login"
+		        }
+		    ]
+		});
+	});
+</script>
+<form id="myform"></form>
