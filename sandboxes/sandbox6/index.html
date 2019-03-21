@@ -1,0 +1,29 @@
+<h1>PHP Code in HTML</h1>
+
+<body>
+
+    <form action="loop.php">
+        <input type="submit" value="my button" />
+    </form>
+
+    <form action="" method="POST">
+        <input type="text" value="value" name="myfield">
+        <input type="submit" value="post">
+    </form>
+</body>
+
+<script>
+    function ajaxmagic() {
+        $.post(                             //call the server
+            "vincenzbuhler.com",                     //At this url
+            {
+                field: "value",
+                name: "John"
+            }                               //And send this data to it
+        ).done(                             //And when it's done
+            function (data) {
+                $('#fromAjax').html(data);  //Update here with the response
+            }
+            );
+    }
+</script>
