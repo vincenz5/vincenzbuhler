@@ -13,6 +13,7 @@
   <script type="text/javascript" src="dep/jsv.js"></script>
   <script type="text/javascript" src="dep/jsonform.js"></script>
   <script type="text/javascript" src="submit.js"></script>
+  <script type="text/javascript" src="submit.js"></script>
   <script type="text/javascript">
     $('form').jsonForm({
       schema: {
@@ -42,3 +43,18 @@
     });
   </script>
 </body>
+
+<script>
+  var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "vincenzb_form",
+  user: "vincenzb_vincenz",
+  password: "B;B%C_aduT7{"
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
+</script>
