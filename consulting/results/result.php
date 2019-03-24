@@ -1,8 +1,9 @@
 <?php
+
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
     
-        
+    
     // $conn = '';
     // $query = '';
     // $dbconn = '';
@@ -28,22 +29,21 @@
     // $time='x';
     // $postcode='y';
 
-    $venue = $conn->real_escape_string($_POST['venue']);
-    $date = $conn->real_escape_string($_POST['date']);
-    $time = $conn->real_escape_string($_POST['time']);
-    $postcode = $conn->real_escape_string($_POST['postcode']);
+    $name = $conn->real_escape_string($_POST['name']);
+    $industry = $conn->real_escape_string($_POST['industry']);
+    $contact = $conn->real_escape_string($_POST['contact']);
+    $location = $conn->real_escape_string($_POST['location']);
 
     // mysqli_real_escape_string($venue, $date, $time, $postcode);
 
-    $query = "INSERT INTO concert (`venue`, `date`, `time`, `postcode`) VALUES ('$venue', '$date', '$time', '$postcode')";
+    $query = "SELECT * FROM contacts (`name`, `industry`, `contact`, `location`) VALUES ('$name', '$industry', '$contact', '$location')";
 
     mysqli_query($conn, $query);
 
- // This will print whatever the user entered into the form.html page.
- $name = filter_input(INPUT_GET, 'venue', FILTER_SANITIZE_STRING);
- echo "Enjoy ". $name ."!";
+ // This will print whatever the user entered into the index.html page.
+//  $name = filter_input(INPUT_GET, 'name', FILTER_SANITIZE_STRING);
+//  echo "<p style='font-size:20px;margin-top:20px;margin-left:30px;'>Thank you for your submission,". $_POST['name'] ."! I will be in touch soon. </p> <br>";
 
-    if(isset($_POST['submit'])) {
-        echo "thanks";
-    }
+ echo $name;
+
 ?>

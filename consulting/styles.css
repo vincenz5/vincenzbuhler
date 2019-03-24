@@ -14,7 +14,7 @@ body {
     background-size: 100% auto;
   }
 
-p {
+#construct {
     text-align: center;
     color: rgb(187, 25, 133);
     font-size: 40px;
