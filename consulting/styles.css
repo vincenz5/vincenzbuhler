@@ -5,6 +5,7 @@ header {
 body {
   background-color: rgb(173, 165, 165);
   background-image:url("../assets/images/consulting5.jpg");
+  padding-bottom: 300px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -12,6 +13,7 @@ body {
     background-image:url("../assets/images/consulting5.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    padding-bottom: 300px;
   }
 
 #construct {

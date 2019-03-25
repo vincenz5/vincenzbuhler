@@ -43,6 +43,20 @@
  $name = filter_input(INPUT_GET, 'name', FILTER_SANITIZE_STRING);
  echo "<p style='font-size:20px;margin-top:20px;margin-left:30px;'>Thank you for your submission,". $_POST['name'] ."! I will be in touch soon. </p> <br>";
 
+ echo "<form action='result.php' method='post'>
+         <input type='submit' name='someAction' value='Check Out Other Contacts' style='margin-top:50px; margin-left:30px;     
+         background-color: rgb(89, 89, 226); /* Green */
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 30px;
+         border-radius: 8px;
+         margin-bottom:2px;' />
+     </form>";
+
  echo "<a href='http://vincenzbuhler.com' style='color:white;'>
  <button style='margin-top:50px; margin-left:30px;     
    background-color: rgb(89, 89, 226); /* Green */

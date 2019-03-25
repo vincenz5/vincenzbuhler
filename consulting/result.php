@@ -1,8 +1,9 @@
 <?php
-    $host = "localhost"; // Host name 
-    $username = "vincenzb_v"; // Mysql username 
-    $password = "passwords"; // Mysql password 
-    $db_name = "vincenzb_1"; // Database name 
+
+$host = "localhost"; // Host name 
+$username = "vincenzb_v"; // Mysql username 
+$password = "passwords"; // Mysql password 
+$db_name = "vincenzb_1"; // Database name 
 
 $con=mysqli_connect($host, $username, $password, $db_name);
 // Check connection
@@ -33,4 +34,5 @@ echo "</tr>";
 echo "</table>";
 
 mysqli_close($con);
+
 ?>
