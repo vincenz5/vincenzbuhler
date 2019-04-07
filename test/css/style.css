@@ -1936,10 +1936,10 @@
   content: "\f4e1";
 }
 .tf-ion-social-facebook-outline:before {
-  content: "\f230";
+  content: "../images/facebook.png";
 }
 .tf-ion-social-facebook:before {
-  content: "\f231";
+  content: "../images/facebook.png";
 }
 .tf-ion-social-foursquare-outline:before {
   content: "\f34c";
