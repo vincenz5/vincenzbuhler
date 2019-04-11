@@ -1935,12 +1935,12 @@
 .tf-ion-social-euro:before {
   content: "\f4e1";
 }
-.tf-ion-social-facebook-outline:before {
+/* .tf-ion-social-facebook-outline:before {
   content: "../images/facebook.png";
 }
 .tf-ion-social-facebook:before {
   content: "../images/facebook.png";
-}
+} */
 .tf-ion-social-foursquare-outline:before {
   content: "\f34c";
 }
