@@ -17,21 +17,43 @@
     background: url("images/solar_array1.jpg");
   }
 
+  p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  h2 {
+    margin-left: .3rem;
+  }
+
+  h4 {
+    margin-left: .3rem;
+  }
+
+  h5 {
+    margin-left: .3rem;
+  }
+
   li {
       margin-bottom: 10px;
+  }
+
+  .card {
+    margin-top: 3rem;
+    margin-left: 1rem;
   }
   
   /* Create two unequal columns that floats next to each other */
   /* Left column */
   .leftcolumn {   
     float: left;
-    width: 75%;
+    width: 76rem;
   }
   
   /* Right column */
   .rightcolumn {
     float: left;
-    width: 25%;
+    width: 13rem;
     padding-left: 20px;
   }
   
@@ -43,10 +65,11 @@
   }
   
   /* Add a card effect for articles */
-  .card {
-     background-color: white;
+  .board {
+     background-color: #333;
      padding: 20px;
      margin-top: 20px;
+     border-radius: .5rem;
   }
   
   /* Clear floats after the columns */
@@ -150,4 +173,39 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+
+/* The navigation bar */
+.blogbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  right: 0; /* Position the navbar at the top of the page */
+
+  height: 3rem;
+}
+
+/* Links inside the navbar */
+.blogbar nav {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+/* Change background on mouse-over */
+.blogbar nav:hover {
+  background: #ddd;
+  color: black;
+}
+
+.rightcolumn {
+  position: fixed;
+  right:0;
 }
