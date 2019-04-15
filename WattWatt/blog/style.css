@@ -7,6 +7,7 @@
     font-family: Arial;
     padding: 20px;
     background: #f1f1f1;
+    padding-bottom: 50px;
   }
   
   /* Header/Blog Title */
@@ -47,14 +48,16 @@
   /* Left column */
   .leftcolumn {   
     float: left;
-    width: 76rem;
+    width: 74rem;
   }
   
   /* Right column */
   .rightcolumn {
     float: left;
-    width: 13rem;
+    width: 16rem;
     padding-left: 20px;
+    position: fixed;
+    right:0;
   }
   
   /* Fake image */
@@ -70,6 +73,7 @@
      padding: 20px;
      margin-top: 20px;
      border-radius: .5rem;
+     overflow: hidden;
   }
   
   /* Clear floats after the columns */
@@ -88,6 +92,11 @@
   }
 
   @media only screen and (max-width: 601px) {
+
+  .board {
+    margin-top: -1rem;
+  }
+
   .logos {
     display:block;
     margin-left:40px;
@@ -165,9 +174,6 @@
 }
 }
 
-body {
-  padding-bottom: 50px;
-}
 
 .mainimage {
   display: block;
@@ -175,37 +181,6 @@ body {
   margin-right: auto;
 }
 
-
-
-/* The navigation bar */
-.blogbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  right: 0; /* Position the navbar at the top of the page */
-
-  height: 3rem;
-}
-
-/* Links inside the navbar */
-.blogbar nav {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
-
-/* Change background on mouse-over */
-.blogbar nav:hover {
-  background: #ddd;
-  color: black;
-}
-
-.rightcolumn {
-  position: fixed;
-  right:0;
+.board #myLinks {
+  display: none;
 }

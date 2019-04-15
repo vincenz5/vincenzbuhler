@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="ham.css">
     <!-- CSS -->
     <!-- bootstrap.min css -->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
@@ -17,6 +18,9 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/style.min.css">
     <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" charset="UTF-8" src="links.js"></script>
 </head>
 
 <body>
@@ -503,8 +507,11 @@
         <div class="rightcolumn">
 
             <div class="board">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"> Navigate</i>
+                </a>
                 <div>
-                    <div>
+                    <div id="myLinks">
                         <ul>
                             <li class="nav-item">
                                 <a class="nav-link" data-scroll="" href="/WattWatt">Home</a>
@@ -543,11 +550,11 @@
                 </div>
             </div>
 
-            <div class="board">
+            <!-- <div class="board">
                 <h3>Follow Us</h3>
                 <a href="https://twitter.com/wattwattenergy" class="twitter-hashtag-button" data-show-count="false">
                     Tweet #WattWatt</a>
-            </div>
+            </div> -->
 
         </div>
     </div>
