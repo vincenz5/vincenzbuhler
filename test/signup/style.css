@@ -1,7 +1,8 @@
 body {
-    margin:3px;
+    margin: 1rem;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Anaheim';
+    margin-bottom: 80rem;
 }
 
 h1 {
@@ -9,23 +10,50 @@ h1 {
 }
 
 .head {
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 .box {
-    width: 500px;
+    width: 100%;
     padding: 40px;
-    position: absolute;
-    top: 20%;
+    position: relative;
+    top: .5rem;
     left: 50%;
     transform: translate(-50%,10%);
     background: #191919;
     text-align: center;
     margin-top: 10px;
 }
+
+#back {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: .2rem solid white;
+    height: 4rem;
+    width: 9rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    font-family: 'Anaheim';
+    height: 5rem;
+    line-height: 5rem;
+
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+#back:hover{
+    background: #2e85cc;
+  }
 
 .box h1 {
     color:white;
@@ -38,14 +66,14 @@ h1 {
     border:0;
     background: none;
     display: block;
-    margin: 20px auto;
+    margin: 1rem auto;
     text-align: center;
-    border: 2px solid #3498db;
+    border: 2px solid white;
     padding: 14px 10px;
-    width: 200px;
+    width: 19rem;
     outline: none;
     color: white;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     transition: 0.25s;
 }
 
@@ -60,7 +88,7 @@ h1 {
     display: block;
     margin: 20px auto;
     text-align:center;
-    border: 2px solid #2ecc71;
+    border: 2px solid #2e85cc;
     padding: 14px 40px;
     outline: none;
     color:white;
@@ -70,5 +98,5 @@ h1 {
 }
 
 .box input[type="submit"]:hover{
-    background: #2ecc71;
+    background: #2e85cc;
 }

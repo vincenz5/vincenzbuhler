@@ -42,7 +42,7 @@
 
  // This will print whatever the user entered into the index.html page.
  $first = filter_input(INPUT_GET, 'first', FILTER_SANITIZE_STRING);
- echo "<p style='font-size:20px;margin-top:20px;margin-left:30px;'>Thank you for your submission,". $_POST['first'] ."! We will be in touch soon. </p> <br>";
+ echo "<p style='font-size:20px;margin-top:20px;margin-left:30px;'>Thank you for your submission,". $_POST['first'] ."! Look out for an email confirmation to log in. </p> <br>";
 
  echo 
  "<div class='all-post text-center col-lg-12'>
