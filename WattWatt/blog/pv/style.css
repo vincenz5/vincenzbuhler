@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: url("images/solar_array1.jpg");
+  }
+
+  li {
+      margin-bottom: 10px;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media only screen and (max-width: 601px) {
+  .logos {
+    display:block;
+    margin-left:40px;
+    margin-right:auto;
+  }
+
+  #element{
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(89, 89, 226);
+    color: white;
+    text-align: center;
+    border-top: 5px solid black;
+  }
+
+  .logo {
+    margin-bottom:20px;
+    margin-right: 50px;
+    margin-top: 30px;
+  }
+
+  .logopic {
+    height:80px;
+    width: auto;
+    margin-bottom:20px;
+    margin-right:50px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(89, 89, 226);
+  color: white;
+  text-align: center;
+  border-top: 2px solid black;
+
+}
+
+.logo {
+  margin-right:50px;
+  color: rgb(89, 89, 226);
+  margin-bottom:30px;
+}
+
+.logopic {
+  height:40px;
+  width:auto;
+  margin-top: 5px;
+}
+}
+
+body {
+  padding-bottom: 50px;
+}
+
+.mainimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

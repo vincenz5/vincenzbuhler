@@ -45,9 +45,30 @@
  echo "<p style='font-size:20px;margin-top:20px;margin-left:30px;'>Thank you for your submission,". $_POST['first'] ."! Look out for an email confirmation to log in. </p> <br>";
 
  echo 
- "<div class='all-post text-center col-lg-12'>
- <a class='btn btn-main' href='/test'>Return</a>
-</div>";
+ " <style> #home:hover {
+    background: #2e85cc;
+ </style>
+ <a id='Home' href='/WattWatt' 
+ style='
+ position: fixed;
+ top: 0.5rem;
+ right: 0.5rem;
+ border: .2rem solid white;
+ height: 4rem;
+ width: 9rem;
+ font-size: 2rem;
+ color: white;
+ text-align: center;
+ text-decoration: none;
+ background: black;
+ font-family: 'Anaheim';
+ height: 5rem;
+ line-height: 5rem;'>
+
+ <span style='
+ display: inline-block;
+ vertical-align: middle;'> Home </span>
+</a>"
 
 
 ?>
