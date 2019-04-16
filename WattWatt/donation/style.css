@@ -13,8 +13,58 @@ body {
     right: 16px;
 }
 
+.decks {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.deck1 {
+    margin-right: 3rem;
+}
+
+.deck {
+    height: 45rem;
+    width: 30%;
+    /* padding: 2rem; */
+    float:left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: .2rem solid black;
+    border-radius: .25rem;
+    margin-right: 2rem;
+
+}
+
 .card-content {
     margin-left: 10px;
+    height: 5rem;
+}
+
+.c-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+    position: absolute;
+    bottom: 0;
+}
+
+hr {
+    width: 80%
+}
+
+.photob{
+    height: 18rem;
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10%!important;
 }
 
 .form {
