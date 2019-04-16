@@ -1,0 +1,183 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=.6">
+    <!-- Bring in Web3 -->
+    <script type="text/javascript" src=”web3.min.js”></script>
+    <script type="text/javascript" src='node_modules/bignumber.js/bignumber.js'></script>
+    <!-- Check for Web3 -->
+    <script type="text/javascript" src="web3.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" target="_blank" href="https://wattwatt.io">Home</a>
+        <a target="_blank" href="https://faucet.rinkeby.io/">Get Ether</a>
+        <a target="_blank" href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn">Get Metamask</a>
+        <a href="#about">About</a>
+    </div>
+
+    <header>
+        <div class="title">
+            <!-- <img class="img-fluid" src="assets/images/wattwatt.ico"> -->
+            <div class="text-center">
+                <div>
+                    <img src="../images/WattWattLogo.png" id="logo">
+                    <h2 style="color:white;">Puerto Rico Solar Relief</h2>
+                    <p style="color:white;">Contribute to the relief effort of Americans without electricity</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- <body>
+        <div id="wrapper">
+     
+            <p>WattWatt has partnered with local Puerto Rican initiatives, including Off Grid Relief, to fundraise the money used
+                to install solar generation and battery backup for homes in the mountains of Puerto Rico. If you chose to donate
+                using this page, your capital will be collected by a smart contract and transfered to the address of the installers.
+                You can see this smart contract, its code, and its transactions by clicking See Crowdfunding Contract.</p>
+    
+            Donation Amount (in Ether):
+            <input type="number" size="50" id="amount" value="0.1" min="1">
+            <br>
+            <button onClick="sendDonation()" id="transfer" style="width:300px;display:flex;" target="_blank;">Donate Through Smart Contract!</button>
+    
+        </div>
+    </body> -->
+
+    <div class="contain-fluid d-flex flex-column grow">
+        <div class="row mx-3 mt-1">
+            <div class="col-lg-4 mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <p>Currently Fundraising!</p>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="mt-1 mb-2">200 kW Commercial Project - Mexico City, Mexico</h2>
+                    </div>
+                    <img class="img-fluid" src="../images/Rooftop3.jpeg">
+
+                    <div class="card-content">
+                        <p class="mt-1">Installation: Mexico City Installer Corp</p>
+                        <p>Size: 200 kW, 300W Trina panels, 667 panels</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Return: 11.3% Annual Percentage Rate</p>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <button small>Bookmark</button> -->
+
+                        Funding Amount (in Ether):
+                        <input type="number" size="50" id="amount" value="0.1" min="1">
+                        <br>
+                        <button onClick="sendDonation()" id="transfer" class="btn btn-dark" target="_blank;">Fund this project!</button>
+                        <button small id="bookmark">Bookmark</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <p>Currently Fundraising!</p>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="mt-1 mb-2">180 kW Commercial Project - Merida, Mexico</h2>
+                    </div>
+                    <img class="img-fluid mb-4" src="../images/Mega.jpg">
+                    <div class="card-content">
+                        <p class="mt-1">Installation: Yucatan Installer Corp</p>
+                        <p>Size: 180 kW, 300W Trina panels, 600 panels</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Return: 10.9% Annual Percentage Rate</p>
+                    </div>
+                    <div class="card-footer">
+
+                        Funding Amount (in Ether):
+                        <input type="number" size="50" id="amount" value="0.1" min="1">
+                        <br>
+                        <button onClick="sendDonation()" id="transfer" class="btn btn-dark" target="_blank;">Fund this project!</button>
+
+                        <button small id="bookmark">Bookmark</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <p>Currently Fundraising!</p>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="mt-1 mb-2">330 kW Commercial Project - Playa del Carmen, Mexico</h2>
+                    </div>
+                    <img class="img-fluid mb-5" src="../images/MexicoComm.jpeg">
+                    <div class="card-content">
+                        <p class="mt-1">Installation: Quintana Installer Corp</p>
+                        <p>Size: 330 kW, 300W Trina panels, 1,100 panels</p>
+                    </div>
+                    <div class="card-content">
+                        <p>Return: 12.1% Annual Percentage Rate</p>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <button small>Bookmark</button> -->
+
+                        Funding Amount (in Ether):
+                        <input type="number" size="50" id="amount" value="0.1" min="1">
+                        <br>
+                        <button onClick="sendDonation()" id="transfer" class="btn btn-dark" target="_blank;">Fund this project!</button>
+                        <button small id="bookmark">Bookmark</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form">
+        <form action="subscribe.php">
+            <div class="contain">
+                <h2>Signup for Notifications of New Projects</h2>
+            </div>
+            <div id="input">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email address" name="mail" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="subscribe"> New Project Notifications
+                </label>
+            </div>
+
+            <div id="button">
+                <input type="submit" value="Subscribe">
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- <footer>
+        <div class="footer-content">
+            <a class="footer-links" href="https://github.com/wattwattenergy">
+                <img src="../images/github.svg" alt="">
+            </a>
+
+            <a class="footer-links" href="https://twitter.com/wattwattenergy">
+                <img height="18" src="../images/twitterWhite.svg" alt="">
+            </a>
+
+            <a class="footer-links" href="https://medium.com/wattwattenergy">
+                <img src="../images/medium.svg" alt="">
+            </a>
+
+            <a class="footer-links" href="https://discord.gg/vqWYcCj">
+                <img src="../images/discord.svg" alt="">
+            </a>
+        </div>
+    </footer> -->
+</body>
