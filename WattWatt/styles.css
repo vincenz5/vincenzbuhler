@@ -15,8 +15,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%)
 }
-</style>
-<style type="text/css">
+
 .swal-icon--error {
     border-color: #f27474;
     -webkit-animation: animateErrorIcon .5s;
