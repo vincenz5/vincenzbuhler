@@ -1,0 +1,36 @@
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+#pay {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.submittal {
+    margin-top: 3rem;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+#amount {
+    height: 3rem;
+    font-size: 1.5rem;
+}
