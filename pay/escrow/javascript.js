@@ -1,1 +1,1 @@
-document.getElementById("demo").style.color = "blue";
+// document.getElementById("demo").style.color = "blue";

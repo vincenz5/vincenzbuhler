@@ -6,22 +6,30 @@
 </head>
 
 <body>
-    <p>Escrow Funds to Vincenz</p>
+    <h3 style = "left: 50%; right: 50%; margin-bottom: 0rem;">Escrow Funds to Vincenz</h3>
+
 
     <div id="pay">
-        <input type="number" size="50" id="amount" value="0.10" min="1">Amount in Ether
+
+        <div class="input-box">
+            <input type="number" size="50" id="amount" value="0.10" min="1" autofocus="autofocus" />
+            <span class="unit">Ether</span>
+        </div>
         <br>
-        <!-- <input type="address" value="your address" size="50" id="payee">
-        <br> -->
         <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">Pay Vincenz!</button>
+        <div id="balance">
+            <div id="etherlog">
+                <p>LOG</p>
+            </div>
+        </div>
     </div>
 
-    <div>
-        
-    </div>
 
-<script type="text/javascript" src="web3.js"></script>
-<!-- <script type="text/javascript" src=”web3.min.js”></script> -->
-<script type="text/javascript" src='../bignumber.js'></script>
-<script type="text/javascript" src='javascript.js'></script>
+
+    <script type="text/javascript" src="web3.js"></script>
+    <!-- <script type="text/javascript" src=”web3.min.js”></script> -->
+    <script type="text/javascript" src='ethjs.min.js'></script>
+    <script type="text/javascript" src='balance.js'></script>
+    <script type="text/javascript" src='../bignumber.js'></script>
+    <script type="text/javascript" src='javascript.js'></script>
 </body>

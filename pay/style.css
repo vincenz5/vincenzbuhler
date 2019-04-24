@@ -1,3 +1,5 @@
+
+
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -10,27 +12,63 @@
 }
 
 #pay {
-    margin-top: 10rem;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     border: 3px solid green;
-    padding: 10px;
+
+    position: relative;
 }
 
 .submittal {
-    margin-top: 3rem;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 4rem 4rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #amount {
-    height: 3rem;
-    font-size: 1.5rem;
+    height: 4rem;
+    font-size: 3rem;
+}
+
+#balance {
+    right: 0rem;
+    bottom: 0rem;
+    width: 30%;
+    position: absolute;
+    background-color: rgba(112, 127, 194, 0.377); /* Green */
+    border: none;
+    color: white;
+    padding: 4rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+}
+
+#etherlog {
+    font-size: 2.5rem;
+}
+
+#input {
+    position: relative;
+    display: block;
+}
+
+.input-box { position: relative; }
+
+input { display: block; border: 1px solid #d7d6d6; background: #fff; padding: 2rem 2rem 2rem 8rem; width: 30rem; }
+
+.unit { position: absolute; display: block; right: 36rem; top: .5rem; z-index: 9; font-size: 3rem;}
+
+@media only screen and (max-width: 601px) {
+    .pay {
+        width: 100%;
+    }
 }
