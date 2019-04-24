@@ -4,33 +4,38 @@
 
 <head>
     <meta charset="utf-8" />
-
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Send Vincenz Dai</title>
 </head>
 
 <body>
-    <p>Pay me with stablecoins!</p>
-
     <div>
         <!-- <a target = "_blank" href="/pay/dai" class="button">I already have Dai</a> -->
 
-        <a href="http://pay.vincenzbuhler.com/dai" class="button">I need to get some Dai</a>
-        <a href="http://pay.vincenzbuhler.com/escrow" class="button">Pay in Ether through escrow</a>
+        <!-- <a href="http://pay.vincenzbuhler.com/escrow" class="button">Pay in Ether through escrow</a> -->
+        <select id="mySelect" name="list" size="1">
+            <option value="1">Send Dai</option>
+            <option value="2">Send Eth</option>
+        </select>
+        <!-- <span id="tag"></span> -->
         <div id="pay">
-            <input type="number" size="50" id="amount" value="0.10" min="1">Amount in USD
+            <span>
+                <input type="number" size="50" id="amount" value="0.10" min="1">
+                <p id="tag">USD</p>
+            </span>
             <br>
             <!-- <input type="address" value="your address" size="50" id="payee">
             <br> -->
             <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">Pay Vincenz!</button>
         </div>
-
+        <a href="http://pay.vincenzbuhler.com/dai" class="button" style="margin-top: 8rem;">I need to get some Dai</a>
         <!-- <p id = "demo">Hello</p> -->
     </div>
 </body>
-<script type="text/javascript" src="web3.js"></script>
+<script type="text/javascript" src="changecurrency.js"></script>
+<script type="text/javascript" src="Dai.js"></script>
+<script type="text/javascript" src="sendeth.js"></script>
 <!-- <script type="text/javascript" src=”web3.min.js”></script> -->
 <script type="text/javascript" src='bignumber.js'></script>
 
-<script type="text/javascript" src='javascript.js'></script>
 </html>

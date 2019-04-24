@@ -24,7 +24,7 @@ window.addEventListener('load', async () => {
 });
 
 // Donation function called by button push
-function Pay() {
+function PayE() {
     console.log("Thank you!")
     var escrowContract = "0x2ac4a0788FfCc9fb1E50F8BF81535974D8A1b710";
     var src =  web3.eth.accounts[0];

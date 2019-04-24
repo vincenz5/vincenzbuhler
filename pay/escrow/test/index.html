@@ -1,19 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
-.input-box { position: relative; }
 
-input { display: block; border: 1px solid #d7d6d6; background: #fff; padding: 10px 10px 10px 20px; width: 195px; }
-
-.unit { position: absolute; display: block; left: 5px; top: 10px; z-index: 9; }
     </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-        <div class="input-box">
-                <input value="" autofocus="autofocus"/>
-                <span class="unit">£</span>
-              </div>
+        <form id="app-cover">
+                    <div id="select-box">
+                            <input type="checkbox" id="options-view-button">
+                            <div id="select-button" class="brd">
+                                    <div id="selected-value">
+                                        <span>Select a currency</span>
+                                    </div>
+                                    <div id="chevrons">
+                                            <i class="fas fa-chevron-up"></i>
+                                            <i class="fas fa-chevron-down"></i>
+                                    </div>
+                            </div>
+                            <div id="options">
+                                    <div class="option">
+                                            <input class="s-c top" type="radio" name="platform" value="codepen">
+                                            <input class="s-c bottom" type="radio" name="platform" value="codepen">
+                                            <i class="fab fa-codepen"></i>
+                                            <span class="label">Dai Stablecoin</span>
+                                            <span class="opt-val">Dai Stablecoin</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c top" type="radio" name="platform" value="dribbble">
+                                            <input class="s-c bottom" type="radio" name="platform" value="dribbble">
+                                            <i class="fab fa-dribbble"></i>
+                                            <span class="label">Ether</span>
+                                            <span class="opt-val">Ether</span>
+                                    </div>
+                                    <!-- <div class="option">
+                                            <input class="s-c top" type="radio" name="platform" value="behance">
+                                            <input class="s-c bottom" type="radio" name="platform" value="behance">
+                                            <i class="fab fa-behance"></i>
+                                            <span class="label">Behance</span>
+                                            <span class="opt-val">Behance</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c top" type="radio" name="platform" value="hackerrank">
+                                            <input class="s-c bottom" type="radio" name="platform" value="hackerrank">
+                                            <i class="fab fa-hackerrank"></i>
+                                            <span class="label">HackerRank</span>
+                                            <span class="opt-val">HackerRank</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c top" type="radio" name="platform" value="stackoverflow">
+                                            <input class="s-c bottom" type="radio" name="platform" value="stackoverflow">
+                                            <i class="fab fa-stack-overflow"></i>
+                                            <span class="label">StackOverflow</span>
+                                            <span class="opt-val">StackOverflow</span>
+                                    </div>
+                                    <div class="option">
+                                            <input class="s-c top" type="radio" name="platform" value="freecodecamp">
+                                            <input class="s-c bottom" type="radio" name="platform" value="freecodecamp">
+                                            <i class="fab fa-free-code-camp"></i>
+                                            <span class="label">FreeCodeCamp</span>
+                                            <span class="opt-val">FreeCodeCamp</span>
+                                    </div> -->
+                                    <!-- <div id="option-bg"></div> -->
+                            </div>
+                    </div>
+            </form>
 </body>
+
+<script type="text/javascript" src='java.js'></script>
+<script type="text/javascript" src="../sendeth.js"></script>
+<script type="text/javascript" src="../../Dai.js"></script>
+<!-- <script type="text/javascript" src=”web3.min.js”></script> -->
+<script type="text/javascript" src='../ethjs.min.js'></script>
+<script type="text/javascript" src='../balance.js'></script>
+<script type="text/javascript" src='../../bignumber.js'></script>
+<script type="text/javascript" src='../javascript.js'></script>
 </html>
+<!-- 
+<form id="app-cover">
+        <div id="select-box">
+                <input type="checkbox" id="options-view-button">
+                <div id="select-button" class="brd">
+                        <div id="selected-value">
+                            <span>Select a currency</span>
+                        </div>
+                        <div id="chevrons">
+                                <i class="fas fa-chevron-up"></i>
+                                <i class="fas fa-chevron-down"></i>
+                        </div>
+                </div>
+                <div id="options" id="mySelect" size="1" name="list">
+                        <div class="option">
+                                <input class="s-c top" type="radio" name="platform" value="codepen" value="1">
+                                <input class="s-c bottom" type="radio" name="platform" value="codepen" value="1">
+                                <i class="fab fa-codepen"></i>
+                                <span class="label">Dai Stablecoin</span>
+                                <span class="opt-val">Dai Stablecoin</span>
+                        </div>
+                        <div class="option">
+                                <input class="s-c top" type="radio" name="platform" value="dribbble" value="2">
+                                <input class="s-c bottom" type="radio" name="platform" value="dribbble" value="2">
+                                <i class="fab fa-dribbble"></i>
+                                <span class="label">Ether</span>
+                                <span class="opt-val">Ether</span>
+                        </div>
+</div>
+</div>
+</form> -->

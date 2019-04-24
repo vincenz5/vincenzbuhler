@@ -20,8 +20,8 @@ window.addEventListener('load', function() {
             try {
             if (!error){
         console.log('Ether:', web3.fromWei(result,'ether'));
-                document.getElementById("etherlog").innerHTML = HTMLOutputElement.setText("");
-                document.getElementById("etherlog").innerHTML+=  web3.fromWei(result,'ether') + " ETH Account Balance<br>";
+                // document.getElementById("etherlog").innerHTML = HTMLOutputElement.setText("");
+                document.getElementById("etherlog").innerHTML =  web3.fromWei(result,'ether') + " ETH in Escrow<br>";
             }else
         console.log('Error: ', error);
             } catch ( err ) {
