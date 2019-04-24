@@ -6,6 +6,8 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Send Vincenz Dai</title>
+    <base href="http://vincenzbuhler.com/pay/">
+    <link rel="stylesheet" href="/pay/style.css" type="text/css">
 </head>
 
 <body>
@@ -22,20 +24,62 @@
             <span>
                 <input type="number" size="50" id="amount" value="0.10" min="1">
                 <p id="tag">USD</p>
+
             </span>
-            <br>
-            <!-- <input type="address" value="your address" size="50" id="payee">
-            <br> -->
             <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">Pay Vincenz!</button>
+            <div id="balance">
+                <div id="etherlog">
+                    <p>LOG</p>
+                </div>
+            </div>
+        </div>
+        <div id="contractaddress">
+            <span>
+                <input type="text" value="0x2ac4a0788FfCc9fb1E50F8BF81535974D8A1b710" id="myInput">
+                <button onclick="Copy()" id="copybutton">Copy</button>
+            </span>
         </div>
         <a href="http://pay.vincenzbuhler.com/dai" class="button" style="margin-top: 8rem;">I need to get some Dai</a>
+        <br>
+        <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" class="button" style="margin-top: 3rem;">Download Metamask</a>
         <!-- <p id = "demo">Hello</p> -->
+        <br>
+        <a href="https://wallet.coinbase.com" class="button" style="margin-top: 3rem;">Download Coinbase Browser</a>
+
     </div>
 </body>
+
+<script rtype="text/javascript" href="/pay/balance.js"></script>
 <script type="text/javascript" src="changecurrency.js"></script>
 <script type="text/javascript" src="Dai.js"></script>
 <script type="text/javascript" src="sendeth.js"></script>
+<script type="text/javascript" src='balance.js'></script>
 <!-- <script type="text/javascript" src=”web3.min.js”></script> -->
 <script type="text/javascript" src='bignumber.js'></script>
+<script type="text/javascript" src='ethjs.min.js'></script>
+<script type="text/javascript" src='copy.js'></script>
+
+<script>function Copy() {
+        /* Get the text field */
+        var copyText = document.getElementById("myInput");
+      
+        /* Select the text field */
+        copyText.select();
+      
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+      
+        /* Alert the copied text */
+        alert("Copied the text: " + copyText.value);
+      }</script>
 
 </html>
+
+<!-- <div id = "bottombuttons">
+        <button onClick="PayE()" id="transfer" class="submittal" target="_blank;">Pay Vincenz!</button>
+        <div id="balance">
+            <div id="etherlog">
+                <p>LOG</p>
+            </div>
+        </div>
+    </div> -->
