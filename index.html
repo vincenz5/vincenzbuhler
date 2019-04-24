@@ -19,19 +19,25 @@
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
     <!-- Main Stylesheet -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="body" style="margin-top:50px;">
-        <div class="topnav">
-                <a href="#home">Home</a>
-                <a class="active" href="http://wattwatt.io">WattWatt</a>
-                <a href="https://medium.com/@wattwattenergy">WattWatt Medium</a>
-                <a href="/personal">Personal</a>
-                <a href="/consulting">Consulting</a>
-                <a href="/blog">My Blog</a>
-                <a href="/WattWatt">New Website</a>
-              </div>
+    <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <div id="myLinks">
+            <a href="#home">Home</a>
+            <a class="active" href="http://wattwatt.io">WattWatt</a>
+            <a href="https://medium.com/@wattwattenergy">WattWatt Medium</a>
+            <a href="/personal">Personal</a>
+            <a href="/consulting">Consulting</a>
+            <a href="/blog">My Blog</a>
+            <a href="/WattWatt">New Website</a>
+        </div>
+    </div>
 
     <h1 style="text-align: center;margin-top:50px;">Welcome to Vincenz Buhler's personal website</h1>
     <h2 style="text-align: center">Currently under construction.</h2>
@@ -107,6 +113,18 @@
                 border-radius: 8px;">Consulting</button>
         </a>
     </div> -->
+
+    <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+    <script type="text/javascript" src=”style.js”></script>
 </body>
 
 <div class="footer">
