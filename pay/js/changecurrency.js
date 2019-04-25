@@ -30,4 +30,6 @@ function Copy() {
   
     /* Alert the copied text */
     alert("Copied the text: " + copyText.value);
+
+    location.reload();
   }

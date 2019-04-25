@@ -1,6 +1,6 @@
 body {
     font-family: quattrocento sans,sans-serif;
-    /* background: lightblue; */
+    background: lightblue;
 }
 
 #header {
@@ -68,6 +68,7 @@ $ah: 6.5rem; //address height
     position: absolute;
     width: 100%;
     height: $ah;
+    background: lightblue;
 }
 
 input[type="text"]
@@ -140,7 +141,7 @@ input[type="text"]
     height: 4rem;
     font-size: 3rem;
     border: 1px solid #d7d6d6; 
-    background: #fff; 
+    background: rgb(136, 190, 207); 
     padding: 2rem 0rem 2rem 2rem; 
 }
 
