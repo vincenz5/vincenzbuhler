@@ -1,0 +1,178 @@
+body {
+    font-family: quattrocento sans,sans-serif;
+    /* background: lightblue; */
+}
+
+#header {
+    left: 50%; 
+    right: 50%; 
+    margin-bottom: 0rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 601px) {
+    .pay {
+        width: 100%;
+    }
+
+    #balance {
+        position: relative;
+        width: 100%;
+        display:block;
+        margin-top: 1rem;
+    }
+}
+
+#mySelect {
+    display: block;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+}
+
+.tag {
+    display: inline-block;
+    position: relative;
+}
+
+.tag::after {
+    position: absolute;
+    top: 2px;
+    right: .5em;
+    transition: all .05s ease-in-out;
+    content: 'Dai or Ether';
+}
+
+.tag:hover::after {
+    right: 1.5em;
+}
+
+$ah: 6.5rem; //address height
+
+#myInput {
+    position: absolute;
+    width: 100%;
+    height: $ah;
+}
+
+input[type="text"]
+{
+    font-size: 2rem;
+    left: 0;
+    position: absolute;
+}
+
+#copybutton {
+    position: absolute;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    right:0;
+    height: $ah;
+}
+
+#tag {
+    display: block;
+    font-size: 5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+
+
+.bottombuttons {
+    margin-top: 10rem;
+}
+
+#pay {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border: 3px solid green;
+    position: relative;
+}
+
+.submittal {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    border-radius: 2rem;
+}
+
+#amount {
+    height: 4rem;
+    font-size: 3rem;
+    border: 1px solid #d7d6d6; 
+    background: #fff; 
+    padding: 2rem 0rem 2rem 2rem; 
+}
+
+#balance {
+    right: 0rem;
+    bottom: 0rem;
+    background-color: rgba(112, 127, 194, 0.377); /* Green */
+    border: none;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+#input {
+    position: relative;
+    display: block;
+}
+
+.input-box { position: relative; }
+
+
+.unit { 
+    position: absolute; 
+    display: block; 
+    right: 36rem; 
+    top: .5rem; 
+    z-index: 9; 
+    font-size: 3rem;
+}
+

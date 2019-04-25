@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Send Vincenz Dai</title>
-    <base href="http://vincenzbuhler.com/pay/">
-    <link rel="stylesheet" href="/pay/style.css" type="text/css">
-</head>
+    <base href="http://vincenzbuhler.com/pay/" />
+  </head>
 
-<body>
+  <body>
     <div>
-        <!-- <a target = "_blank" href="/pay/dai" class="button">I already have Dai</a> -->
+      <!-- <a target = "_blank" href="/pay/dai" class="button">I already have Dai</a> -->
 
-        <!-- <a href="http://pay.vincenzbuhler.com/escrow" class="button">Pay in Ether through escrow</a> -->
-        <select id="mySelect" name="list" size="1">
-            <option value="1">Send Dai</option>
-            <option value="2">Send Eth</option>
-        </select>
-        <!-- <span id="tag"></span> -->
-        <div id="pay">
-            <span>
-                <input type="number" size="50" id="amount" value="0.10" min="1">
-                <p id="tag">USD</p>
+      <!-- <a href="http://pay.vincenzbuhler.com/escrow" class="button">Pay in Ether through escrow</a> -->
+      <select id="mySelect" name="list" size="1">
+        <option value="1">Send Dai (click to change)</option>
+        <option value="2">Send Ether (click to change)</option>
+      </select>
+      <!-- <span id="tag"></span> -->
+      <div id="pay">
+        <div class="tag">
+          <input
+            type="number"
+            size="50"
+            id="amount"
+            value="0.10"
+            min="1"
+            id="currency"
+          />
+          <!-- <p title="currency" id="tag">USD</p> -->
+        </div>
+        <div class="bottombuttons">
+          <button
+            onClick="Pay()"
+            id="transfer"
+            class="submittal"
+            target="_blank;"
+          >
+            Pay Vincenz!
+          </button>
 
-            </span>
-            <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">Pay Vincenz!</button>
-            <div id="balance">
-                <div id="etherlog">
-                    <p>LOG</p>
-                </div>
+          <button id="balance">
+            <div id="etherlog">
+              <p>Loading..</p>
             </div>
+          </button>
         </div>
-        <div id="contractaddress">
-            <span>
-                <input type="text" value="0x2ac4a0788FfCc9fb1E50F8BF81535974D8A1b710" id="myInput">
-                <button onclick="Copy()" id="copybutton">Copy</button>
-            </span>
-        </div>
-        <a href="http://pay.vincenzbuhler.com/dai" class="button" style="margin-top: 8rem;">I need to get some Dai</a>
-        <br>
-        <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" class="button" style="margin-top: 3rem;">Download Metamask</a>
-        <!-- <p id = "demo">Hello</p> -->
-        <br>
-        <a href="https://wallet.coinbase.com" class="button" style="margin-top: 3rem;">Download Coinbase Browser</a>
-
+      </div>
+      <div id="contractaddress">
+        <span>
+          <input
+            type="text"
+            value="0x2ac4a0788FfCc9fb1E50F8BF81535974D8A1b710"
+            id="myInput"
+          />
+          <button onclick="Copy()" id="copybutton">Copy</button>
+        </span>
+      </div>
+      <a
+        href="http://pay.vincenzbuhler.com/dai"
+        class="button"
+        style="margin-top: 8rem;"
+        >I need to get some Dai</a
+      >
+      <br />
+      <a
+        href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn"
+        class="button"
+        style="margin-top: 3rem;"
+        >Download Metamask</a
+      >
+      <!-- <p id = "demo">Hello</p> -->
+      <br />
+      <a
+        href="https://wallet.coinbase.com"
+        class="button"
+        style="margin-top: 3rem;"
+        >Download Coinbase Browser</a
+      >
     </div>
-</body>
+  </body>
 
-<script rtype="text/javascript" href="/pay/js/balance.js"></script>
-<script type="text/javascript" src="/pay/js/changecurrency.js"></script>
-<script type="text/javascript" src="/pay/js/Dai.js"></script>
-<script type="text/javascript" src="/pay/js/sendeth.js"></script>
-<script type="text/javascript" src='/pay/js/balance.js'></script>
-<!-- <script type="text/javascript" src=”web3.min.js”></script> -->
-<script type="text/javascript" src='/pay/js/bignumber.js'></script>
-<script type="text/javascript" src='/pay/js/ethjs.min.js'></script>
-<script type="text/javascript" src='/pay/js/copy.js'></script>
+  <script rtype="text/javascript" href="/pay/js/balance.js"></script>
+  <script type="text/javascript" src="/pay/js/changecurrency.js"></script>
+  <script type="text/javascript" src="/pay/js/Dai.js"></script>
+  <script type="text/javascript" src="/pay/js/sendeth.js"></script>
+  <script type="text/javascript" src="/pay/js/balance.js"></script>
+  <!-- <script type="text/javascript" src=”web3.min.js”></script> -->
+  <script type="text/javascript" src="/pay/js/bignumber.js"></script>
+  <script type="text/javascript" src="/pay/js/ethjs.min.js"></script>
+  <script type="text/javascript" src="/pay/js/copy.js"></script>
 
-<script>function Copy() {
-        /* Get the text field */
-        var copyText = document.getElementById("myInput");
-      
-        /* Select the text field */
-        copyText.select();
-      
-        /* Copy the text inside the text field */
-        document.execCommand("copy");
-      
-        /* Alert the copied text */
-        alert("Copied the text: " + copyText.value);
-      }</script>
+  <script>
+    function Copy() {
+      /* Get the text field */
+      var copyText = document.getElementById("myInput");
 
+      /* Select the text field */
+      copyText.select();
+
+      /* Copy the text inside the text field */
+      document.execCommand("copy");
+
+      /* Alert the copied text */
+      alert("Copied the text: " + copyText.value);
+    }
+  </script>
 </html>
 
 <!-- <div id = "bottombuttons">

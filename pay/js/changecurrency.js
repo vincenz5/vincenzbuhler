@@ -1,19 +1,22 @@
 //cache the select and span elements
 var mySelect = document.getElementById("mySelect"),
     tag = document.getElementById("tag");
+    flag = document.getElementById("transfer");
 
-var myTransfer = document.getElementById("transfer"),
-    flag = document.getElementById("PayE()");
+// var mySelect = document.getElementById("mySelect"),
+//     flag = document.getElementById("PayE()");
 
 //when it changes
 mySelect.onchange = function() {
-    console.log (flag)
+    console.log(flag);
        //change the tag innerHTML checking the selected value of the select
-       tag.innerHTML = mySelect.value === "1" ? "US Dollars" : "Ether";
-    //    flag.innerHTML = transfer.value === "1" ? "Pay()" : "PayE()";
-    document.getElementById("transfer").setAttribute( "onClick", "PayE()" );
-
+       tag.innerHTML = mySelect.value === "1" ? "USD" : "Ether";
+       flag.innerHTML = mySelect.value === "1" ? "Pay()" : "PayE()";
+    // document.getElementById("transfer").setAttribute( "onClick", "PayE()" );
+    console.log(mySelect.value);
 }
+
+
 
 function Copy() {
     /* Get the text field */
