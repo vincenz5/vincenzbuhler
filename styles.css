@@ -100,6 +100,9 @@ body {
     text-align: center;
     margin-top: 6rem;
   }
+  #medium {
+    padding: 1rem 0rem;
+  }
   .logo {
     padding: 1rem 1rem 2rem 2rem;
   }

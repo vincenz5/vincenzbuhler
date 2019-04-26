@@ -31,7 +31,7 @@
         <div id="myLinks">
             <a href="#home">Home</a>
             <a class="active" href="http://wattwatt.io">WattWatt</a>
-            <a href="https://medium.com/@wattwattenergy">WattWatt Medium</a>
+            <a id="medium" href="https://medium.com/@wattwattenergy">WattWatt Medium</a>
             <a href="/personal">Personal</a>
             <a href="/consulting">Consulting</a>
             <a href="/blog">My Blog</a>
@@ -45,7 +45,7 @@
         <img class="mainimage" src="assets/images/compressed/sanjuan.jpg" alt="Sorry! Image is not available."></img>
     </div>
 
-    <script type="text/javascript" src=”style.js”></script>
+
 </body>
 
 <div class="footer">
@@ -72,5 +72,15 @@
     </div>
 
 </div>
-
+<script type="text/javascript" src=”style.js”></script>
+<script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
 </html>
