@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
         const contract_address = '0x2ac4a0788FfCc9fb1E50F8BF81535974D8A1b710';
         var eth = null;
         function startApp(web3) {
-            //alert("entro");
+            // alert("entro");
             document.getElementById("etherlog").innerHTML = "Checking Balance...<br>";
             eth = new Eth(web3.currentProvider);
             //alert("llego");

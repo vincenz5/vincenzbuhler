@@ -1,19 +1,19 @@
 //cache the select and span elements
 var mySelect = document.getElementById("mySelect"),
     tag = document.getElementById("tag");
-    flag = document.getElementById("transfer");
-
+    // flag = document.getElementById("transfer");
+console.log(tag);
+console.log(flag);
 // var mySelect = document.getElementById("mySelect"),
 //     flag = document.getElementById("PayE()");
 
 //when it changes
 mySelect.onchange = function() {
-    console.log(flag);
-       //change the tag innerHTML checking the selected value of the select
-       tag.innerHTML = mySelect.value === "1" ? "USD" : "Ether";
+    console.log(mySelect.Value);
+
+       tag.innerHTML = mySelect.value === "1" ? "USD" : "Ether";       //change the tag innerHTML checking the selected value of the select
        flag.innerHTML = mySelect.value === "1" ? "Pay()" : "PayE()";
     // document.getElementById("transfer").setAttribute( "onClick", "PayE()" );
-    console.log(mySelect.value);
 }
 
 
