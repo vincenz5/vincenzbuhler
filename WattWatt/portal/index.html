@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>The Loan Portal</title>
-    <link rel="stylesheet" href="style.css" />
+    <base href="https://vincenzbuhler.com/WattWatt/portal" />
+    <link rel="stylesheet" href="portal/style.css" />
   </head>
 
   <p id="title">Welcome to Decentralized Energy Financing</p>
@@ -13,7 +14,7 @@
   <nav id="topnav">
     <ul>
       <li><img id="logo" src="../../assets/images/WattWattLogo.png" /></li>
-      <li><a href="#section1">Ongoing Loans</a></li>
+      <li><a href="#section1">Find A Loan</a></li>
       <li><a href="#section2">Your Loans</a></li>
       <!-- <li><a href="#section3">Borrow</a></li>
       <li><a href="#section4">Learn</a></li> -->
@@ -31,8 +32,16 @@
         <div class="container">
           <p>Loan 1</p>
           <p>Puerto Rico</p>
+          <input
+          type="number"
+          size="50"
+          id="amount"
+          value="0.10"
+          min="1"
+          id="currency"
+        />
             <div class="button">
-                <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
+                <button onClick="PayE()" id="transfer" class="submittal" target="_blank;">
                 Fund!
                 </button>
             </div>
@@ -48,6 +57,14 @@
         <div class="container">
           <p>Loan 2</p>
           <p>Puerto Rico</p>
+          <input
+          type="number"
+          size="50"
+          id="amount"
+          value="0.10"
+          min="1"
+          id="currency"
+        />
           <div class="button">
                 <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
                 Fund!
@@ -81,7 +98,7 @@
               class="projimage"
             />
             <div class="container">
-              <p>Loan 3</p>
+              <p>Loan 4</p>
               <p>Mexico</p>
               <div class="button">
                     <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
@@ -116,13 +133,13 @@
     </section> -->
   </body>
 
-  <!-- <script rtype="text/javascript" href="/pay/js/balance.js"></script> -->
-  <!-- <script type="text/javascript" src="/pay/js/changecurrency.js"></script> -->
-  <!-- <script type="text/javascript" src="/pay/js/Dai.js"></script> -->
-  <script type="text/javascript" src="/WattWatt/portal/js/sendeth.js"></script>
+  <script rtype="text/javascript" href="portal/js/balance.js"></script>
+  <!-- <script type="text/javascript" src="portal/js/changecurrency.js"></script> -->
+  <script type="text/javascript" src="portal/js/Dai.js"></script>
+  <script type="text/javascript" src="portal/js/sendeth.js"></script>
   <!-- <script type="text/javascript" src="/pay/js/balance.js"></script> -->
-  <!-- <script type="text/javascript" src=”web3.min.js”></script> -->
-  <script type="text/javascript" src="/WattWatt/portal//bignumber.js"></script>
-  <script type="text/javascript" src="/WattWatt/portal//ethjs.min.js"></script>
+  <!-- <script type="text/javascript" src=”portal/js/web3.min.js”></script> -->
+  <script type="text/javascript" src="portal/js/bignumber.js"></script>
+  <script type="text/javascript" src="portal/js/ethjs.min.js"></script>
   <!-- <script type="text/javascript" src="/pay/js/copy.js"></script> -->
 </html>

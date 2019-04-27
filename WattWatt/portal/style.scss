@@ -1,5 +1,5 @@
 $backgroundcolor: rgba(255, 255, 255, 0.678);
-$color1: lightblue;
+$color1: #1a2d61;
 $color10: #d34836;
 $color2: #009688;
 $color3: #ffa000;
@@ -126,6 +126,10 @@ ul {
         padding-bottom: 3rem;
         margin-left: 1rem;
         margin-right: 1rem;
+      #currency {
+        padding-right: 2rem;
+        font-size: 2rem;
+      }
       .button {
         position: relative;
         float: right;

@@ -44,10 +44,10 @@ body {
   position: sticky;
   width: 100%;
   top: 0;
-  background: lightblue;
+  background: #1a2d61;
   -webkit-transition: all, 650ms, cubic-bezier(0.22, 1, 0.25, 1);
   transition: all, 650ms, cubic-bezier(0.22, 1, 0.25, 1);
-  color: lightblue;
+  color: #1a2d61;
   z-index: 9;
   content: "";
 }
@@ -103,6 +103,11 @@ ul li #logo {
   padding-bottom: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.cards .card .container #currency {
+  padding-right: 2rem;
+  font-size: 2rem;
 }
 
 .cards .card .container .button {
