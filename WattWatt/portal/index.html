@@ -1,36 +1,128 @@
-<head>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Loan Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-            <!-- CSS -->
-    <!-- Fontawesome Icon font -->
-    <link rel="stylesheet" href="../styles.css">
-    <!-- bootstrap.min css -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="../css/animate.css">
-    <!-- Magnific popup css -->
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-    <!-- Slick Carousel -->
-    <link rel="stylesheet" href="../css/slick.css">
-    <link rel="stylesheet" href="../css/slick-theme.css">
-    <!-- Main Stylesheet -->
+  <p id="title">Welcome to Decentralized Energy Financing</p>
 
-    <!-- <link rel="stylesheet" href="../css/style.min.css" integrity="" media="screen"> -->
-</head>
-
-<body>
-    <h1>Welcome to Decentralized Energy Financing</h1>
-
-    <div class="col-lg-12 text-center">
-            <div class="text-center" data-wow-duration="500ms">
-                <!-- <div class="counters-item">
-                    <h2 style="font-weight:bold;color:white;">Earn attractive returns &amp; Save the world</h2>
-                    <p>Our backend tech lets us to offer you almost all of the earnings from a loan. Ask your bank
-                        if they can offer this.</p>
-                </div> -->
+  <nav id="topnav">
+    <ul>
+      <li><img id="logo" src="../../assets/images/WattWattLogo.png" /></li>
+      <li><a href="#section1">Ongoing Loans</a></li>
+      <li><a href="#section2">Your Loans</a></li>
+      <!-- <li><a href="#section3">Borrow</a></li>
+      <li><a href="#section4">Learn</a></li> -->
+      <!-- <li><a id="signup1" href="#section4">Signup ▼</a></li> -->
+    </ul>
+  </nav>
+  <body>
+    <div class="cards">
+      <div class="card">
+        <img
+          src="../../assets/images/MexicoComm.jpeg"
+          alt="Comm"
+          class="projimage"
+        />
+        <div class="container">
+          <p>Loan 1</p>
+          <p>Puerto Rico</p>
+            <div class="button">
+                <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
+                Fund!
+                </button>
             </div>
-            <a href="/test/signup" class="btn btn-main"> Start a project with us </a>
         </div>
+      </div>
 
-    
-</body>
+      <div class="card">
+        <img
+          src="../../assets/images/commroof1.jpeg"
+          alt="Comm"
+          class="projimage"
+        />
+        <div class="container">
+          <p>Loan 2</p>
+          <p>Puerto Rico</p>
+          <div class="button">
+                <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
+                Fund!
+                </button>
+            </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="../../assets/images/commroof2.jpeg"
+          alt="Comm"
+          class="projimage"
+        />
+        <div class="container">
+          <p>Loan 3</p>
+          <p>Mexico</p>
+          <div class="button">
+                <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
+                Fund!
+                </button>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+            <img
+              src="../../assets/images/PRSolar2.JPG"
+              alt="Comm"
+              class="projimage"
+            />
+            <div class="container">
+              <p>Loan 3</p>
+              <p>Mexico</p>
+              <div class="button">
+                    <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
+                    Fund!
+                    </button>
+                </div>
+            </div>
+          </div>
+    </div>
+    <!-- <section id="section1">
+      <h1>Dynamic Navigation Bar</h1>
+      <p class="intro">
+        Inspired by the new Android Lollipop UI, the navbar gets colored
+        dynamically with a tinted background-color of each following section.
+      </p>
+    </section>
+
+    <section id="section2">
+      <h2>Another Section…</h2>
+      <p>
+        By the way each section is displayed full screen just by one line of
+        css. You can use viewport untis for flexible heights and widths.
+      </p>
+    </section>
+
+    <section id="section3">
+      <h2>And Another Section…</h2>
+    </section>
+
+    <section id="section4">
+      <h2>Wohoo! One more…</h2>
+    </section> -->
+  </body>
+
+  <!-- <script rtype="text/javascript" href="/pay/js/balance.js"></script> -->
+  <!-- <script type="text/javascript" src="/pay/js/changecurrency.js"></script> -->
+  <!-- <script type="text/javascript" src="/pay/js/Dai.js"></script> -->
+  <script type="text/javascript" src="/WattWatt/portal/js/sendeth.js"></script>
+  <!-- <script type="text/javascript" src="/pay/js/balance.js"></script> -->
+  <!-- <script type="text/javascript" src=”web3.min.js”></script> -->
+  <script type="text/javascript" src="/WattWatt/portal//bignumber.js"></script>
+  <script type="text/javascript" src="/WattWatt/portal//ethjs.min.js"></script>
+  <!-- <script type="text/javascript" src="/pay/js/copy.js"></script> -->
+</html>
