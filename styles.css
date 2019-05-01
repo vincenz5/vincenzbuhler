@@ -48,6 +48,8 @@ body {
   width: 50%;
   height: auto;
   border-radius: 40px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
 }
 
 .topnav {

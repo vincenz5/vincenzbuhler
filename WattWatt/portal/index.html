@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>WattWatt- Decentralized Lending</title>
-    <base href="https://vincenzbuhler.com/WattWatt/portal" />
-    <link rel="stylesheet" href="portal/style.css" />
+    <!-- <base href="https://vincenzbuhler.com/WattWatt/portal" /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <p id="title">Welcome to Decentralized Energy Financing</p>
@@ -32,14 +32,17 @@
         <div class="container">
           <p>Loan 1</p>
           <p>Puerto Rico</p>
-          <input
-          type="number"
-          size="50"
-          id="amount"
-          value="0.10"
-          min="1"
-          id="currency"
-        />
+          <div class="tag">
+            <input
+            type="number"
+            size="50"
+            id="amount"
+            value="0.10"
+            min="1"
+            id="currency"
+          />
+          </div>
+
             <div class="button">
                 <button onClick="PayE()" id="transfer" class="submittal" target="_blank;">
                 Fund!
@@ -57,6 +60,7 @@
         <div class="container">
           <p>Loan 2</p>
           <p>Puerto Rico</p>
+          <div class="tag">
           <input
           type="number"
           size="50"
@@ -65,6 +69,7 @@
           min="1"
           id="currency"
         />
+          </div>
           <div class="button">
                 <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
                 Fund!
@@ -82,6 +87,16 @@
         <div class="container">
           <p>Loan 3</p>
           <p>Mexico</p>
+          <div class="tag">
+          <input
+          type="number"
+          size="50"
+          id="amount"
+          value="0.10"
+          min="1"
+          id="currency"
+        />
+        </div>
           <div class="button">
                 <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
                 Fund!
@@ -100,6 +115,16 @@
             <div class="container">
               <p>Loan 4</p>
               <p>Mexico</p>
+              <div class="tag">
+              <input style="margin-right: 2rem;"
+              type="number"
+              size="50"
+              id="amount"
+              value="0.10"
+              min="1"
+              id="currency"
+            />
+            </div>
               <div class="button">
                     <button onClick="Pay()" id="transfer" class="submittal" target="_blank;">
                     Fund!
@@ -133,13 +158,13 @@
     </section> -->
   </body>
 
-  <script rtype="text/javascript" href="portal/js/balance.js"></script>
+  <script rtype="text/javascript" href="./js/balance.js"></script>
   <!-- <script type="text/javascript" src="portal/js/changecurrency.js"></script> -->
-  <script type="text/javascript" src="portal/js/Dai.js"></script>
-  <script type="text/javascript" src="portal/js/sendeth.js"></script>
+  <script type="text/javascript" src="./js/Dai.js"></script>
+  <script type="text/javascript" src="./js/sendeth.js"></script>
   <!-- <script type="text/javascript" src="/pay/js/balance.js"></script> -->
   <!-- <script type="text/javascript" src=”portal/js/web3.min.js”></script> -->
-  <script type="text/javascript" src="portal/js/bignumber.js"></script>
-  <script type="text/javascript" src="portal/js/ethjs.min.js"></script>
+  <script type="text/javascript" src="./js/bignumber.js"></script>
+  <script type="text/javascript" src="./js/ethjs.min.js"></script>
   <!-- <script type="text/javascript" src="/pay/js/copy.js"></script> -->
 </html>

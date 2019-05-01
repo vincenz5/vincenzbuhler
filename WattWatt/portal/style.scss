@@ -18,8 +18,22 @@ body {
   background: $backgroundcolor;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding-bottom: 2rem;
+  padding-bottom: 14rem;
   margin: 0rem;
+}
+
+#amount {
+  width: 8rem;
+  font-size: 1.5rem;
+}
+
+.tag::after {
+  position: relative;
+  // top: 2px;
+  right: 3em;
+  transition: all .05s ease-in-out;
+  content: 'USD';
+  font-size: 1.5rem;
 }
 
 #title {
@@ -127,7 +141,7 @@ ul {
         margin-left: 1rem;
         margin-right: 1rem;
       #currency {
-        padding-right: 2rem;
+        padding: 1rem 4rem 1rem 2rem;
         font-size: 2rem;
       }
       .button {
