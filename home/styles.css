@@ -1,6 +1,12 @@
 .header1 {
   text-align: center;
   margin-top: 4rem;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header1:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -62,6 +68,12 @@ body {
   overflow: hidden;
 }
 
+.topnav:hover #myLinks {
+  -webkit-transition-delay: display 5s;
+          transition-delay: display 5s;
+  display: block;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -72,21 +84,30 @@ body {
   font-size: 1.5rem;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
+.topnav a:hover + .topnav #myLinks {
+  display: block;
   background-color: #ddd;
   color: black;
 }
 
+/* Change the color of links on hover */
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: #241a7a;
   color: white;
 }
 
-.topnav #myLinks {
+#myLinks {
   display: none;
   margin-left: 8rem;
+  -webkit-transition: display 2s;
+  transition: display 2s;
+  float: right;
+}
+
+#myLinks a {
+  float: right;
+  margin-right: 1rem;
 }
 
 .topnav a.icon {
