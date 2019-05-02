@@ -11,7 +11,7 @@
 
   //top navigation bar settings
 .topnav {
-  background-color: $color;
+  background-color: lightblue;
   overflow: hidden;
 }
 
@@ -75,10 +75,13 @@
   }
   
   /* Right column */
-  .rightcolumn {
+  div.rightcolumn {
     float: left;
     width: 25%;
     padding-left: 20px;
+    position: sticky;
+    top: 0;
+    height: 30rem;
   }
   
   /* Fake image */
@@ -93,6 +96,10 @@
      background-color: white;
      padding: 20px;
      margin-top: 20px;
+  }
+
+  .row {
+    position: relative;
   }
   
   /* Clear floats after the columns */

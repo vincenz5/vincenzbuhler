@@ -10,6 +10,51 @@ body {
   background: #f1f1f1;
 }
 
+.topnav {
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #241a7a;
+  color: white;
+}
+
+.topnav #myLinks {
+  display: none;
+  margin-left: 8rem;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#navb {
+  width: 2rem;
+  height: 1.5rem;
+}
+
 /* Header/Blog Title */
 .header {
   padding: 30px;
@@ -30,10 +75,14 @@ li {
 }
 
 /* Right column */
-.rightcolumn {
+div.rightcolumn {
   float: left;
   width: 25%;
   padding-left: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 30rem;
 }
 
 /* Fake image */
@@ -48,6 +97,10 @@ li {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+}
+
+.row {
+  position: relative;
 }
 
 /* Clear floats after the columns */
