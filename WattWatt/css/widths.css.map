@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,sBAAsB",
+    "sources": [
+        "widths.scss"
+    ],
+    "names": [],
+    "file": "widths.css"
+}

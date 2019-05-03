@@ -1,0 +1,20 @@
+$color: #1a2d61; //primary color for bars
+$color1: red;
+$color5: rgba(62, 81, 143, 0.726);
+
+$background: rgba(255, 255, 255, 0.678);
+$backgroundcolor: rgba(255, 255, 255, 0.678);
+$color1: #1a2d61;
+$color10: #d34836;
+$color2: #009688;
+$color3: #ffa000;
+$color4: #5677fc;
+
+$colors: "@{color1}", "@{color2}", "@{color3}", "@{color4}";
+$howmany: length($colors);
+
+$baseFontSize: 18px;
+$baseFontFamily: "Montserrat", sans-serif;
+$baseLineHeight: 2.35;
+$baseTextColor: rgba(255, 255, 255, 0.85);
+$baseHeadlineColor: rgba(255, 255, 255, 0.9);

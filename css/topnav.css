@@ -1,0 +1,60 @@
+.topnav {
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+.topnav:hover #myLinks {
+  -webkit-transition-delay: display 5s;
+          transition-delay: display 5s;
+  display: block;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.topnav a:hover + .topnav #myLinks {
+  display: block;
+  background-color: #ddd;
+  color: black;
+}
+
+/* Change the color of links on hover */
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #241a7a;
+  color: white;
+}
+
+#myLinks {
+  display: none;
+  margin-left: 8rem;
+  -webkit-transition: display 2s;
+  transition: display 2s;
+  float: right;
+}
+
+#myLinks a {
+  float: right;
+  margin-right: 1rem;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#navb {
+  width: 2rem;
+  height: 1.5rem;
+}
+/*# sourceMappingURL=topnav.css.map */
