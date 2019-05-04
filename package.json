@@ -21,6 +21,7 @@
     "connect": "^3.6.6",
     "jquery": "^3.3.1",
     "mysql": "^2.16.0",
+    "scrollmagic": "^2.0.6",
     "serve-static": "^1.13.2",
     "tedious": "^5.0.3",
     "web3": "^0.20.5"

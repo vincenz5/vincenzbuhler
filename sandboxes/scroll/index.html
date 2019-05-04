@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* body {
+        margin-top: 3rem;
+      } */
+      div {
+        /* width: 100%;
+        height: 70rem;
+        padding: 3rem 3rem 3rem 3rem;
+        padding-right: 3rem;
+        margin-bottom: 5rem;
+        position: relative; */
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .one {
+        background: lightblue;
+      }
+
+      .two {
+        background: lightcoral;
+      }
+
+      .three {
+        background: lightgray;
+      }
+
+      #pinContainer {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+      }
+
+      #slideContainer {
+        width: 400%;
+        height: 100%;
+      }
+
+      .panel {
+        height: 100%;
+        width: 25%;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content-wrapper">
+      <section id="titlechart" class="home">
+        <div id="description">
+          <h1>ScrollMagic Examples</h1>
+          <h2>Let's start showing off some magic...</h2>
+          <p>
+            <b>Please note:</b> Most of the examples are <b>not</b> optimized
+            for mobile devices, so the sourcecode can be as simple as possible.
+            The obvious exceptions are the examples on mobile support.
+          </p>
+          <ul id="menu"></ul>
+        </div>
+      </section>
+    </div>
+
+    <div id="pinContainer">
+      <div id="slideContainer">
+        <div class="panel blue">
+          <p>Number One</p>
+        </div>
+        <div class="panel turqoise">
+          <p>Number Two</p>
+        </div>
+        <div class="panel green">
+          <p>Number Three</p>
+        </div>
+        <div class="panel bordeaux">
+          <p>Number Three</p>
+        </div>
+      </div>
+    </div>
+    <script src="../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <!-- <script src="scroll.js"></script> -->
+    <script src="./TimelineMax.min.js"></script>
+    <script src="scrollside.js"></script>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script src="./ScrollMagic.min.js"></script>
+    <script src="../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  </body>
+</html>
