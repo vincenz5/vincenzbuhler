@@ -1,4 +1,4 @@
-window.addEventListener('load', async () => {
+async function Connect() {
     // Modern dapp browsers...
     if (window.ethereum) {
         window.web3 = new Web3(ethereum);
@@ -21,7 +21,7 @@ window.addEventListener('load', async () => {
     else {
         console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
     }
-});
+};
 
 // Donation function called by button push
 function Pay() {

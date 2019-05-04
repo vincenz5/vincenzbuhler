@@ -1,7 +1,7 @@
 .topnav {
   background-color: #1a2d61;
   overflow: hidden;
-  padding: 2rem 0rem 2rem 0rem;
+  padding: 1rem 0rem 2rem 0rem;
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
@@ -28,7 +28,7 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 50px;
+  padding: 2rem 2rem;
   text-decoration: none;
 }
 
@@ -43,8 +43,7 @@
   color: white;
 }
 
-.topnav .topnav .icon {
-  background: black;
+.topnav .icon {
   display: block;
   position: absolute;
   left: 0;
@@ -63,46 +62,58 @@
 }
 
 .topnav #myLinks {
-  display: none;
-  margin-left: 8rem;
+  display: block;
   -webkit-transition: display 2s;
   transition: display 2s;
-  float: right;
 }
 
 .topnav #myLinks a {
-  float: right;
   margin-right: 1rem;
 }
 
 @media only screen and (max-width: 1100px) {
-  #topnav {
-    height: 4rem;
-  }
-  #topnav ul {
-    padding-left: 2rem;
-    right: 0;
+  .topnav #myLinks {
     display: none;
   }
-  #topnav ul li {
+  .topnav ul {
+    padding-left: 2rem;
+    right: 0;
+    height: 4rem;
+  }
+  .topnav ul li {
     margin-right: 0.5em;
     font-size: 0.5em;
   }
-  #topnav ul li a {
+  .topnav ul li a {
     margin-left: 1rem;
     margin-right: .5rem;
   }
-  #topnav ul li #logo {
+  .topnav ul li:active + .topnav a {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.678);
+    color: black;
+  }
+  .topnav ul li:active + .topnav a #logo {
     float: top;
     left: 0.5rem;
     top: -1.5rem;
   }
-  #topnav ul:hover {
+  .topnav ul .icon:active #myLinks {
+    display: block;
+  }
+  .topnav ul .icon:active ul {
+    display: block;
+    background: black;
+  }
+  .topnav ul .icon:active ul li a {
+    display: block;
+  }
+  .topnav ul ul:hover {
     -webkit-transition-delay: display 5s;
             transition-delay: display 5s;
     display: block;
   }
-  .submittal {
+  .topnav .submittal {
     padding: 0.5rem 1.5rem 0.5rem;
     font-size: 1.5rem;
   }

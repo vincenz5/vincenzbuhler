@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,KAAK,EAAE,OAAO;EACd,MAAM,EAAE,IAAI;CAQf;;AAVD,AAII,SAJK,CAIL,SAAS,CAAC;EACN,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "metamask.scss"
+    ],
+    "names": [],
+    "file": "metamask.css"
+}

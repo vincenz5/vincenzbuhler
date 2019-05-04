@@ -4,7 +4,7 @@
 .topnav {
     background-color: #1a2d61;
     overflow: hidden;
-    padding: 2rem 0rem 2rem 0rem;
+    padding: 1rem 0rem 2rem 0rem;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     width: 100%;
@@ -26,7 +26,7 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 50px;
+    padding: 2rem 2rem;
     text-decoration: none;
     &:hover + .topnav #myLinks{
       display: block;
@@ -41,14 +41,15 @@
     color: white;
   }
 
-  .topnav .icon {
-    background: black;
+  .icon {
+    // background: black;
     display: block;
     position: absolute;
     left: 0;
     top: 0;
     height: 3rem;
     width: 3rem;
+    // padding-top: 1rem;
   }
   .topnav #logo {
     height: 4rem;
@@ -60,24 +61,25 @@
   }
     
   #myLinks {
-    display: none;
-    margin-left: 8rem;
+    display: block;
+    // margin-left: 3rem;
     transition: display 2s;
-    float:right;
+    // float:right;
     a {
-      float:right;
+      // float:right;
       margin-right:1rem;
     }
   }
 }
 
 @media only screen and (max-width: 1100px) {
-  #topnav {
-    height: 4rem;
+  .topnav {
+    #myLinks {
+      display: none;
+    }
     ul {
       padding-left: 2rem;
       right: 0;
-      display: none;
       li {
         margin-right: 0.5em;
         font-size: 0.5em;
@@ -86,6 +88,10 @@
             margin-left: 1rem;
             margin-right: .5rem;
         }
+        &:active + .topnav a{
+          display: block;
+          background-color: $background;
+          color: black;
 
         #logo {
           float: top;
@@ -94,6 +100,22 @@
           }
       }
     }
+    height: 4rem;
+    .icon:active {
+      #myLinks {
+        display: block;
+      }
+      ul {
+        display: block;
+        background: black;
+        li {
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+
     ul:hover {
       transition-delay: display 5s;
       display: block;
@@ -103,6 +125,7 @@
     padding: 0.5rem 1.5rem 0.5rem;
     font-size: 1.5rem;
   }
+}
 }
   
   // #navb {

@@ -1,5 +1,6 @@
 @import "../css/topnav.scss";
 @import "../css/colors.scss";
+@import "../css/metamask.scss";
 
 .topnav {
   @import "../css/topnav.scss";
@@ -76,7 +77,7 @@ ul {
     font-size: 0.9em;
 
     a {
-        margin-left: 3rem;
+        // margin-left: 3rem;
         margin-right: 9em;
       text-decoration: none;
       color: #fff;
@@ -139,6 +140,22 @@ ul {
 
   .topnav {
     @import "../css/topnav.scss";
+    .icon:active {
+      width: 5rem;
+      #myLinks {
+        display: block;
+      }
+      ul {
+        @import "../css/topnav.scss";
+        li {
+          @import "../css/topnav.scss";
+          a {
+            @import "../css/topnav.scss";
+            display: block;
+          }
+        }
+      }
+    }
   }
   
   .icon {
