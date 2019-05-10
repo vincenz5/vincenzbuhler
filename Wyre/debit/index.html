@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Verify with Wyre</title>
+  </head>
+  <body>
+    <button id="verify-button" class="btn btn-primary mt-5">
+      Verify with Wyre
+    </button>
+
+    <script src="https://verify.sendwyre.com/js/widget-loader.js"></script>
+    <script type="text/javascript">
+      (function() {
+        var deviceToken = localStorage.getItem("DEVICE_TOKEN");
+        if (!deviceToken) {
+          var array = new Uint8Array(25);
+          window.crypto.getRandomValues(array);
+          deviceToken = Array.prototype.map
+            .call(array, x => ("00" + x.toString(16)).slice(-2))
+            .join("");
+          localStorage.setItem("DEVICE_TOKEN", deviceToken);
+        }
+
+        var widget = new Wyre.Widget({
+          env: "test",
+          accountId: "AC-EPLB2VQTJNH",
+          auth: {
+            type: "secretKey",
+            secretKey: deviceToken
+          },
+          operation: {
+            type: "debitcard",
+            sourceCurrency: "USD",
+            destCurrency: "DAI",
+            // destAmount: 0.02,
+            sourceAmount: 0.03,
+            dest: "ethereum:0x222d98c588226b24d0c5e93256900e958e064105"
+          }
+        });
+
+        widget.on("close", function(e) {
+          // the widget closed before completing the process
+
+          if (e.error) {
+            console.log("there was a problem: ", e.error);
+          } else {
+            console.log("the customer closed the widget");
+          }
+        });
+
+        widget.on("complete", function(e) {
+          // onboarding was completed successfully!
+        });
+
+        document
+          .getElementById("verify-button")
+          .addEventListener("click", function(e) {
+            widget.open();
+          });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><strong>Note:</strong> This rectangle is growing and changing color because I have SVG instructions on the x and y axis, width and height, and fill.</p>
+<p>SVG images can do this because they're not 'bitmap' images. Bitmap is a type of image file format that can map out where pixels go, with multiple bits per pixel setting up the instructions. These drawings can be dynamic and interactive. To change the image, scripting languages like Javascript can hold the instructions. Events can be encoded into these languages like 'onmouseover' or 'onlick'. CSS can also be used.</p>
+
+<svg width="500" height="500">
+  <rect id="rec" x="300" y="100" width="300" height="100" style="fill:lime"> 
+    <animate attributeName="x" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="300" to="0" /> 
+    <animate attributeName="y" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="100" to="0" /> 
+    <animate attributeName="width" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="300" to="800" /> 
+    <animate attributeName="height" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="100" to="300" /> 
+    <animate attributeName="fill" attributeType="CSS" from="lime" to="red" begin="2s" dur="4s" fill="freeze" />
+  </rect>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+</html>
