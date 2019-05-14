@@ -1,0 +1,408 @@
+<header>
+  <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta charset="utf-8" />
+  <title>Summary of Ethereum Projects</title>
+  <style type="text/css" media="screen"></style>
+</header>
+
+<body>
+  <div class="topnav">
+    <a class="icon">
+      <i id="navb" class="fa fa-bars"></i>
+    </a>
+
+    <div id="myLinks">
+      <a href="#money">Money</a>
+      <a href="#lending">Lending</a>
+      <a href="#scaling">Scaling</a>
+      <a href="#reference">Reference</a>
+      <a href="#software">Software</a>
+      <a href="#exchange">Exchange</a>
+      <a href="#wallet">Wallet</a>
+      <a href="#prediction">Prediction</a>
+      <a href="#DAO">DAOs</a>
+      <a href="#energy">Energy</a>
+    </div>
+  </div>
+
+  <h2 id="summary">Summaries</h2>
+
+  <div id="projects">
+
+    <div id="money">
+      <p class="heading">Money</p>
+      <div class="project">
+        <a href="https://bank.spankchain.com/">Spankbank</a>
+        <ul>
+          <li>People are not good at coordinating.</li>
+          <li>Allows people to apply to join a guild.</li>
+          <li>
+            Loot tokens are for LPs. These are held by the Moloch contract.
+          </li>
+          <li>The funds are held in the Guild Bank contract.</li>
+          <li>
+            Each proposal has an applicant and list of token addresses that are
+            being distributed, amount of tokens, and voting shares requested.
+          </li>
+          <li>https://github.com/SpankChain/spankbank</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://makerdao.com/en/dai">MakerDAO's Dai</a>
+        <ul>
+          <li>Stabletoken collateralized on-chain with Ether</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="lending">
+      <p class="heading">Lending</p>
+      <div class="project">
+        <a href="https://www.dharma.io/">Dharma</a>
+        <ul>
+          <li>Lend Dai, Ether, or USDC on-chain through smart contracts.</li>
+          <li>Interest rates of 2.50%, 14.00%, etc.</li>
+          <li>
+            Borrower has to overcollateralize the loan, so in case of
+            non-payment, collateral is given to lender.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://www.saltlending.com/">Salt Lending</a>
+        <ul>
+          <li>Similar to Dharma but more traditional</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://tallyco.in/">Tally Coin</a>
+        <ul>
+          <li>Allows people to contribute to projects using Bitcoin.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://coinloan.io/">CoinLoan</a>
+        <ul>
+          <li>Also similar to Dharma or Salt Lending</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://stage.compound.finance/">Compund</a>
+        <ul>
+          <li>Money markets on-chain</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://app.ethlend.io/">ETHLend</a>
+        <ul>
+          <li>Lending platform on Ethereum.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="scaling">
+      <p class="heading">Scaling</p>
+      <div class="project">
+        <a href="https://dai-bridge.poa.network/">POA Network</a>
+        <ul>
+          <li>Proof of Autonomy sidechain for stabletoken transactions.</li>
+          <li>https://forum.poa.network/t/proof-of-autonomy/1743</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://xdai.io/">xDai</a>
+        <ul>
+          <li>Tool for using xDai sidechain.</li>
+          <li>
+            Allows for mobile wallet usage without any passwords or mobile
+            wallet apps.
+          </li>
+          <li>Transactions are essentially free and very fast.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://www.counterfactual.com/">Counterfactual</a>
+        <ul>
+          <li>
+            State channels for off-chain transactions secured by on-chain code.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a
+          href="https://medium.com/loom-network/plasmachain-gamechain-socialchain-the-loom-network-universe-expounded-5c672617a333"
+          >Loom Network</a
+        >
+        <ul>
+          <li>Sidechains based on Plasma Cash.</li>
+          <li>Plasmachain: DPos protocol</li>
+          <li>Protocol backed by Loom token.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://l4.ventures/papers/statechannels.pdf">L4</a>
+        <ul>
+          <li>Research on state channels.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="reference">
+      <p class="heading">Reference</p>
+      <div class="project">
+        <a href="https://loanscan.io/?tab=borrow">LoanScan</a>
+        <ul>
+          <li>Reference page for interests rates and loan opportunities.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://publisher.adchain.com">Adchain</a>
+        <ul>
+          <li>Token curated registry for domain names for advertisers.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="software">
+      <p class="heading">Software</p>
+
+      <div class="project">
+        <a
+          href="https://blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05"
+          >Open Zeppelin</a
+        >
+        <ul>
+          <li>Open source community for building Solidity smart contracts.</li>
+          <li>Curated library for contracts, governed by token community.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="exchange">
+      <p class="heading">Exchange</p>
+
+      <div class="project">
+        <a href="https://0x.org/">0x</a>
+        <ul>
+          <li>Base layer protocol on Ethereum for exchanges</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://slow.trade/">Slow.trade</a>
+        <ul>
+          <li>Decentralized exchange for pairing orders between tokens.</li>
+          <li>Built on DutchX protocol.</li>
+          <li><a href="https://dutchx.readthedocs.io/en/latest/">DutchX</a></li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://theocean.trade/">The Ocean</a>
+        <ul>
+          <li>Pairing of token trades between individual wallets.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://uniswap.io/">Uniswap</a>
+        <ul>
+          <li>
+            Decentralized exchange with on-chain pooled liquidity reserves.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://medium.com/lqdex/introducing-lqdex-bridge-c27a3f36f98c"
+          >Lqdex</a
+        >
+        <ul>
+          <li>Auxiliary bridge for decentralized exchanges.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://instant.airswap.io/tokens">Airswap</a>
+        <ul>
+          <li>Noncustodial exchange, on-chain.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://silverwire.io/">SilverWire</a>
+        <ul>
+          <li>Exchange.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://app.radarrelay.com/">Radar Relay</a>
+        <ul>
+          <li>Decentralized exchange.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="wallet">
+      <p class="heading">Wallet</p>
+
+      <div class="project">
+        <a href="https://safe.gnosis.io/">Gnosis Safe</a>
+        <ul>
+          <li>Multi signature smart contract safe for your funds.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a
+          href="https://www.ryanyosua.me/toshi-the-best-mobile-ethereum-wallet/"
+          >Toshi</a
+        >
+        <ul>
+          <li>Mobile Ethereum wallet.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="prediction">
+      <p class="heading">Prediction</p>
+
+      <div class="project">
+        <a
+          href="https://www.cryptoglobe.com/latest/2018/08/augurs-rep-prediction-market-could-be-impossible-to-shut-down-or-regulate/"
+          >Augur</a
+        >
+        <ul>
+          <li>Decentralized predictions markets.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="services">
+      <p class="heading">Service Companies</p>
+
+      <div class="project">
+        <a href="http://dappdev.org/consulting">Dapp Dev</a>
+        <ul>
+          <li>Dapp development studio.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://mattereum.com/services/">Mattereum</a>
+        <ul>
+          <li>Consultants for dispute resoltion and smart contracts.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="DAO">
+      <p class="heading">Decentralized Autonomous Organizations</p>
+
+      <div class="project">
+        <a href="https://aragon.org/">Aragon</a>
+        <ul>
+          <li>Platform for launching DAOs and managing them.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://molochdao.com/">MolochDAO</a>
+        <ul>
+          <li>
+            Coordination platform focusing on development of open source web3
+            software and infrastructure.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://www.metacartel.network/">Meta Cartel</a>
+        <ul>
+          <li>Fork of Moloch focused on usability of dApps.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="energy">
+      <p class="heading">Energy Focused Projects</p>
+
+      <div class="project">
+        <a href="https://www.powerledger.io/">Power Ledger</a>
+        <ul>
+          <li>
+            Platform for preselling electricity and distributing the earnings
+            for the systems' operation.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://wepower.network/">WePower</a>
+        <ul>
+          <li>Energy procurement and trading.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://gridplus.io/">Grid+</a>
+        <ul>
+          <li>
+            Utility company distributing iOT devices to customers which store
+            their Ethereum.
+          </li>
+          <li>
+            Customers are exposed to fluctuations along rate of change of
+            wholesale prices.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <a href="https://www.lition.io/">Lition</a>
+        <ul>
+          <li>
+            Licensed energy provider in Germany, creating market for customers
+            to sell electricity back.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="project">
+    <a href=""></a>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div> -->
+  <!-- 
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li> -->
+</body>

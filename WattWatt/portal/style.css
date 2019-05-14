@@ -511,6 +511,15 @@ body {
   right: 3em;
   -webkit-transition: all .05s ease-in-out;
   transition: all .05s ease-in-out;
+  content: 'Ether';
+  font-size: 1.5rem;
+}
+
+.tagd::after {
+  position: relative;
+  right: 3em;
+  -webkit-transition: all .05s ease-in-out;
+  transition: all .05s ease-in-out;
   content: 'USD';
   font-size: 1.5rem;
 }

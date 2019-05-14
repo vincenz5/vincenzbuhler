@@ -49,7 +49,7 @@ function Pay() {
     // console.log(donationContract)
     // var b = web3.toWei(wad, "ether")
 
-    payContract.transferFrom(src, dst, wad, { gas: 50000}, console.log)
+    payContract.transferFrom(src, dst, wad, {gas: 50000}, console.log)
         // donationContract.deposit(payee, { gas: 200000, value: Amount }, console.log)
         // .on("receipt", function (receipt) {
         //     $("#txStatus").text("Thank you for your donation! ");

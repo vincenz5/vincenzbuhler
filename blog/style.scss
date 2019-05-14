@@ -5,7 +5,7 @@
   /* Add a gray background color with some padding */
   body {
     font-family: Arial;
-    padding: 20px;
+    padding: 0rem;
     background: #f1f1f1;
   }
 
@@ -13,17 +13,10 @@
 .topnav {
   background-color: lightblue;
   overflow: hidden;
+  height: 3rem;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 50px;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -38,8 +31,17 @@
 }
 
 .topnav #myLinks {
-  display: none;
-  margin-left: 8rem;
+  // display: none;
+  margin: 1rem 0 1rem 2rem;
+  height: 100%;
+  /* Style the links inside the navigation bar */
+  a {
+    height: 100%;
+    color: #f2f2f2;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
 }
 
 .topnav a.icon {
@@ -76,12 +78,20 @@
   
   /* Right column */
   div.rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
+    float: right;
     position: sticky;
     top: 0;
     height: 30rem;
+    width: 23%;
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
   }
   
   /* Fake image */
@@ -115,6 +125,9 @@
       width: 100%;
       padding: 0;
     }
+    div.rightcolumn {
+      width: 100%;
+      padding-left: 0rem;
   }
 
   @media only screen and (max-width: 601px) {
@@ -182,6 +195,10 @@
 
 }
 
+div.rightcolumn {
+  padding-left: 20px;
+}
+
 .logo {
   margin-right:50px;
   color: rgb(89, 89, 226);
@@ -203,4 +220,5 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
 }

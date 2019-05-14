@@ -1,0 +1,102 @@
+* {
+  margin: 0 0 0 0;
+}
+
+.topnav {
+  background-color: rgba(177, 133, 51, 0.63);
+  position: fixed;
+  border-radius: 1rem;
+}
+
+.topnav #myLinks {
+  text-decoration: none;
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.topnav #myLinks a {
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 2rem;
+  font-family: "Avenir-Heavy";
+  color: black;
+}
+
+.topnav #myLinks a :hover {
+  text-decoration: underline;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 60px;
+  /* fixed header height*/
+  margin: -60px 0 0;
+  /* negative fixed header height */
+}
+
+#summary {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-left: 2rem;
+  font-family: "Avenir-Heavy";
+}
+
+#projects {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.project {
+  background-color: rgba(144, 90, 180, 0.424);
+  width: 50%;
+  border-radius: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.project a {
+  margin-left: 2rem;
+  text-decoration: none;
+}
+
+.project ul li {
+  font-family: "AppleSDGothicNeo-Medium";
+}
+
+@media screen and (max-width: 800px) {
+  .topnav {
+    bottom: 0;
+  }
+  .topnav #myLinks {
+    margin: 0.5rem 0.5rem 0.5rem 1.5rem;
+  }
+  .topnav #myLinks a {
+    font-size: 0.9rem;
+  }
+  #projects {
+    width: 100%;
+  }
+  .project {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .topnav {
+    top: 0;
+    margin-bottom: 3rem;
+  }
+  #summary {
+    margin-top: 9rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

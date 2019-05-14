@@ -32,6 +32,15 @@ body {
   // top: 2px;
   right: 3em;
   transition: all .05s ease-in-out;
+  content: 'Ether';
+  font-size: 1.5rem;
+}
+
+.tagd::after {
+  position: relative;
+  // top: 2px;
+  right: 3em;
+  transition: all .05s ease-in-out;
   content: 'USD';
   font-size: 1.5rem;
 }
