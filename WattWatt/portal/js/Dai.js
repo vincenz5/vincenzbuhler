@@ -1,29 +1,4 @@
-async function Connect() {
-    // Modern dapp browsers...
-    if (window.ethereum) {
-        window.web3 = new Web3(ethereum);
-        try {
-            // Request account access if needed
-            await ethereum.enable();
-            // Acccounts now exposed
-            web3.eth.sendTransaction({/* ... */ });
-        } catch (error) {
-            // User denied account access...
-        }
-    }
-    // Legacy dapp browsers...
-    else if (window.web3) {
-        window.web3 = new Web3(web3.currentProvider);
-        // Acccounts always exposed
-        web3.eth.sendTransaction({/* ... */ });
-    }
-    // Non-dapp browsers...
-    else {
-        console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
-    }
-};
-
-// Donation function called by button push
+// Transfer function called by button push
 function Pay() {
     console.log("Thank you!");
     var DaiContract = "0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359";
